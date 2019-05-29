@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+html {
+    overflow: hidden;
+    font-family: 'Segoe UI, Tahoma, Geneva, Verdana, sans-serif';
+}
+
+.link-display-sm {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    html {
+        overflow-y: auto;
+    }
+
+    .link-display-lg {
+        display: none;
+    }
+
+    .link-display-sm {
+        display: block;
+    }
+}

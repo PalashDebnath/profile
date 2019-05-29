@@ -1,0 +1,16 @@
+<div class='topic-container'>
+    <div class='card border-0' *ngFor = 'let topic of topics'>
+        <div class='card-body' *ngIf = 'topic.topicURI !== undefined'>
+            <div class='card-title text-primary border-bottom border-info'>
+                <h5 class='mb-0'>
+                    {{ topic.topicName }}
+                    <a routerLink = '{{ topic.topicURI }}'>
+                        <fa-icon [icon]="['fas', 'link']"></fa-icon>
+                    </a>
+                </h5>
+                <pd-star [rating] = 'topic.topicRating' (notify) = 'onNotify($event)'></pd-star>
+            </div>
+            {{ topic.topicDescription }}
+        </div>
+    </div>
+</div>

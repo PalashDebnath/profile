@@ -1,0 +1,10 @@
+.right-block {
+    overflow-y: auto;
+    overflow-x: hidden; 
+}
+
+@media (max-width: 767.98px) {
+    .right-block {
+        overflow: visible;
+    }
+}

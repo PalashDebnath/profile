@@ -1,0 +1,43 @@
+.detail-container {
+    background: url('../../../assets/images/digital-background.jpg') no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100vh; 
+}
+
+.detail-container-information {
+    background-color:rgba(0, 0, 0, 0.4);
+    min-height: inherit;
+}
+
+.detail-container-information img {
+    width:100px;
+    height:100px;
+}
+
+.detail-container-information h6 {
+    padding-bottom: 25%
+}
+
+@media (max-width: 767.98px) {
+    .detail-container {
+        min-height: 70px;
+    }
+
+    .detail-container-information {
+        padding: 10px 0px 10px 10px;
+        background-color:rgba(0, 0, 0, 0.4);
+    }
+
+    .detail-container-information img {
+        width:50px;
+        height:50px;
+        float: left;
+    }
+
+    .detail-container-information h6 {
+        display: none;
+    }
+}
