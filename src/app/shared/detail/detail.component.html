@@ -1,7 +1,7 @@
 <div class='detail-container'>
     <div class='detail-container-information text-white text-center'>
         <h6 class='pt-5'>{{authorTitle}}</h6>
-        <img src='../assets/images/profile.jpg' class='mx-auto d-block rounded-circle'/>
+        <img src='assets/images/profile.jpg' class='mx-auto d-block rounded-circle'/>
         <h6 class='pt-5'>{{authorIntroduction}}</h6>
         <button class="btn btn-outline-primary mb-2 mr-2 link-display-lg" (click)="openVerticallyCentered(content)">
             <fa-icon [icon]="['far', 'envelope']" size='2x' title={{authorEmail}}></fa-icon>
@@ -20,7 +20,7 @@
       </button>
     </div>
     <div class="modal-body">
-      <embed width="100%" height="500" src="../assets/Resume.pdf">
+      <embed width="100%" height="500" src="assets/Resume.pdf">
     </div>
     <!-- <div class="modal-footer">
       <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>

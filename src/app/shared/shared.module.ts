@@ -11,13 +11,15 @@ import { StarComponent } from './star/star.component';
 import { PageNotFoundComponent } from './pagenotfound/page-not-found.component';
 import { FooterComponent } from './footer/footer.component';
 import { DetailComponent } from './detail/detail.component';
+import { ConvertToSpacesPipe } from '../pipes/convert-to-spaces.pipe';
 
 @NgModule({
   declarations: [
     StarComponent,
     PageNotFoundComponent,
     FooterComponent,
-    DetailComponent
+    DetailComponent,
+    ConvertToSpacesPipe
   ],
   imports: [
     CommonModule,
@@ -29,6 +31,7 @@ import { DetailComponent } from './detail/detail.component';
     PageNotFoundComponent,
     FooterComponent,
     DetailComponent,
+    ConvertToSpacesPipe,
     FontAwesomeModule,
     CommonModule,
     NgbModule
